@@ -1,88 +1,99 @@
-<style>
-    body {
-        background-color: lightpink;
-        color: black;
-        font-family: Arial;
-        font-size: 18px;
-        line-height: 1.5;
-    }
+<!DOCTYPE html>
+<html lang="nl">
 
-    h1 {
-        color: #7a0a45;          /* donker roze-paars */
-    }
+<head>
+    <meta charset="UTF-8">
+    <title>Binair stelsel - Zainspow</title>
 
-    h2 {
-        color: #4b0082;          /* donkerpaars */
-    }
+    <style>
+        body {
+            background-color: lightpink;
+            color: black;
+            font-family: Arial;
+            font-size: 18px;
+            line-height: 1.5;
+        }
 
-    a {
-        color: #4b0082;
-        font-weight: bold;
-    }
+        h1 {
+            color: #7a0a45;
+        }
 
-    table {
-        border-collapse: collapse;
-        background-color: white;
-        color: black;
-    }
+        h2 {
+            color: #4b0082;
+        }
 
-    th, td {
-        border: 1px solid #4b0082;
-        padding: 8px 14px;
-        text-align: center;
-    }
+        a {
+            color: #4b0082;
+            font-weight: bold;
+        }
 
-    th {
-        background-color: #4b0082;
-        color: white;
-    }
+        table {
+            border-collapse: collapse;
+            background-color: white;
+            color: black;
+        }
 
-    iframe {
-        border: 3px solid #7a0a45;
-        border-radius: 8px;
-        background-color: white;
-    }
+        th, td {
+            border: 1px solid #4b0082;
+            padding: 8px 14px;
+            text-align: center;
+        }
 
-    /* ---- Menu ---- */
-    .menu {
-        position: relative;
-        display: inline-block;
-    }
+        th {
+            background-color: #4b0082;
+            color: white;
+        }
 
-    .menu summary {
-        background-color: #7a0a45;
-        color: white;
-        padding: 10px 20px;
-        font-size: 18px;
-        font-weight: bold;
-        cursor: pointer;
-        border-radius: 6px;
-        list-style: none;
-    }
+        iframe {
+            border: 3px solid #7a0a45;
+            border-radius: 8px;
+            background-color: white;
+        }
 
-    .menu summary::-webkit-details-marker {
-        display: none;
-    }
+        .menu {
+            position: relative;
+            display: inline-block;
+        }
 
-    .dropdown {
-        position: absolute;
-        background-color: white;
-        min-width: 180px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        border-radius: 6px;
-        margin-top: 4px;
-    }
+        .menu summary {
+            background-color: #7a0a45;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 6px;
+            list-style: none;
+        }
 
-    .dropdown a {
-        display: block;
-        padding: 10px 16px;
-        color: black;
-        text-decoration: none;
-        font-weight: normal;
-    }
+        .menu summary::-webkit-details-marker {
+            display: none;
+        }
 
-    .dropdown a:hover {
-        background-color: #4b0082;
-        color: white;
-    }
-</style>
+        .dropdown {
+            position: absolute;
+            background-color: white;
+            min-width: 180px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border-radius: 6px;
+            margin-top: 4px;
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px 16px;
+            color: black;
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        .dropdown a:hover {
+            background-color: #4b0082;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <details
