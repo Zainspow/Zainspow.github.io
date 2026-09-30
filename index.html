@@ -2,6 +2,7 @@
 <html lang="nl">
 
 <head>
+    <meta charset="UTF-8">
     <title>Zainspow</title>
 
     <style>
@@ -18,10 +19,58 @@
         h2 {
             color: purple;
         }
+
+         /* Menu */
+        .menu {
+            position: relative;
+            display: inline-block;
+        }
+
+        .menu summary {
+            background-color: deeppink;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            list-style: none;
+        }
+
+        .menu summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .dropdown {
+            position: absolute;
+            background-color: white;
+            min-width: 180px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+            margin-top: 4px;
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px 16px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .dropdown a:hover {
+            background-color: #e5e7eb;
+        }
     </style>
 </head>
 
 <body>
+
+    <details class="menu">
+        <summary>Menu ▾</summary>
+        <div class="dropdown">
+            <a href="binairstelsel.html">Binair stelsel</a>
+            <a href="kleurmodellen.html">Kleurmodellen</a>
+        </div>
+    </details>
 
     <h1>Welkom op mijn website!</h1>
 
