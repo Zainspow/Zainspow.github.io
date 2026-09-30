@@ -11,7 +11,6 @@
             color: black;
             font-family: Arial;
             font-size: 18px;
-            line-height: 1.5;
         }
 
         h1 {
@@ -22,15 +21,9 @@
             color: #4b0082;
         }
 
-        a {
-            color: #4b0082;
-            font-weight: bold;
-        }
-
         table {
             border-collapse: collapse;
             background-color: white;
-            color: black;
         }
 
         th, td {
@@ -44,12 +37,7 @@
             color: white;
         }
 
-        iframe {
-            border: 3px solid #7a0a45;
-            border-radius: 8px;
-            background-color: white;
-        }
-
+        /* Menu */
         .menu {
             position: relative;
             display: inline-block;
@@ -59,15 +47,10 @@
             background-color: #7a0a45;
             color: white;
             padding: 10px 20px;
-            font-size: 18px;
             font-weight: bold;
             cursor: pointer;
             border-radius: 6px;
             list-style: none;
-        }
-
-        .menu summary::-webkit-details-marker {
-            display: none;
         }
 
         .dropdown {
@@ -84,7 +67,6 @@
             padding: 10px 16px;
             color: black;
             text-decoration: none;
-            font-weight: normal;
         }
 
         .dropdown a:hover {
@@ -96,4 +78,83 @@
 
 <body>
 
-    <details
+    <details class="menu">
+        <summary>Menu ▾</summary>
+        <div class="dropdown">
+            <a href="index.html">Home</a>
+            <a href="binairstelsel.html">Binair stelsel</a>
+            <a href="kleurmodellen.html">Kleurmodellen</a>
+        </div>
+    </details>
+
+    <h1>Het binaire stelsel</h1>
+
+    <h2>Wat is het?</h2>
+    <p>
+        Computers gebruiken maar twee cijfers: <strong>0</strong> en <strong>1</strong>.
+        Dat noem je het <strong>binaire stelsel</strong>.
+        Een schakelaar staat uit (0) of aan (1), en dat past goed bij een computer.
+    </p>
+
+    <h2>Hoe werkt het?</h2>
+    <p>
+        Elke plek in een binair getal is <strong>2 keer</strong> zoveel waard
+        als de plek rechts ervan. Je telt alleen de plekken op waar een 1 staat.
+    </p>
+
+    <table>
+        <tr>
+            <th>8</th>
+            <th>4</th>
+            <th>2</th>
+            <th>1</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <p>
+        Het getal hierboven is <strong>1011</strong>.
+        Dat is 8 + 2 + 1 = <strong>11</strong>.
+    </p>
+
+    <h2>Voorbeelden</h2>
+    <table>
+        <tr>
+            <th>Decimaal</th>
+            <th>Binair</th>
+        </tr>
+        <tr><td>1</td><td>0001</td></tr>
+        <tr><td>2</td><td>0010</td></tr>
+        <tr><td>3</td><td>0011</td></tr>
+        <tr><td>4</td><td>0100</td></tr>
+        <tr><td>5</td><td>0101</td></tr>
+        <tr><td>8</td><td>1000</td></tr>
+        <tr><td>15</td><td>1111</td></tr>
+    </table>
+
+    <h2>Speel het spel!</h2>
+    <p>Oefen hier met binaire getallen (het spel is in het Engels):</p>
+
+    <iframe
+        src="https://games.penjee.com/binary-bonanza/game.php"
+        width="600"
+        height="500">
+    </iframe>
+
+    <p>
+        Werkt het spel niet?
+        <a href="https://games.penjee.com/binary-bonanza/" target="_blank">Open het in een nieuw tabblad</a>.
+    </p>
+
+    <hr>
+
+    <p><em>Gemaakt door: Zain Al-Balhawan</em></p>
+
+</body>
+
+</html>
