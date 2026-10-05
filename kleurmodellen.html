@@ -1,95 +1,233 @@
+```html
 <!DOCTYPE html>
 <html lang="nl">
 
 <head>
     <meta charset="UTF-8">
-    <title>Kleurmodellen</title>
+
+    <!-- Titel van de pagina -->
+    <title>Kleurmodellen - Zainspow</title>
 
     <style>
+        /* Algemene opmaak van de pagina */
         body {
             background-color: lightpink;
+            color: black;
             font-family: Arial;
+            font-size: 18px;
         }
 
+        /* Hoofdtitel */
         h1 {
             color: #7a0a45;
         }
 
+        /* Subtitels */
         h2 {
             color: #4b0082;
+        }
+
+        /* Menu */
+        .menu {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Knop van het menu */
+        .menu summary {
+            background-color: #7a0a45;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 6px;
+            list-style: none;
+        }
+
+        /* Uitklapmenu */
+        .dropdown {
+            position: absolute;
+            background-color: white;
+            min-width: 180px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border-radius: 6px;
+            margin-top: 4px;
+        }
+
+        /* Links in het menu */
+        .dropdown a {
+            display: block;
+            padding: 10px 16px;
+            color: black;
+            text-decoration: none;
+        }
+
+        /* Kleur als je over een link gaat */
+        .dropdown a:hover {
+            background-color: #4b0082;
+            color: white;
         }
     </style>
 </head>
 
 <body>
 
-    <details>
-        <summary>Menu</summary>
-        <a href="index.html">Home</a><br>
-        <a href="binairstelsel.html">Binair stelsel</a><br>
-        <a href="kleurmodellen.html">Kleurmodellen</a>
+    <!-- Dit is het menu -->
+    <details class="menu">
+        <summary>Menu ▾</summary>
+
+        <div class="dropdown">
+            <a href="index.html">Home</a>
+            <a href="binairstelsel.html">Binair stelsel</a>
+            <a href="kleurmodellen.html">Kleurmodellen</a>
+        </div>
     </details>
 
-    <h1>Kleurmodellen: RGB</h1>
+    <!-- Titel van de pagina -->
+    <h1>Kleurmodellen</h1>
 
-    <h2>Wat is RGB?</h2>
-    <p>
-        RGB betekent Rood, Groen en Blauw.
-        Schermen mengen deze drie kleuren licht om alle andere kleuren te maken.
-    </p>
-
-    <h2>Kleuren mengen</h2>
-    <img src="rgb.png" width="300">
+    <!-- Uitleg over kleurmodellen -->
+    <h2>Wat zijn kleurmodellen?</h2>
 
     <p>
-        Rood + groen = geel<br>
-        Groen + blauw = cyaan<br>
-        Rood + blauw = magenta<br>
-        Rood + groen + blauw = wit
+        Een kleurmodel is een manier om kleuren met verschillende kleuren en
+        hoeveelheden te maken. Computers gebruiken kleurmodellen om kleuren
+        op een scherm of op papier te laten zien.
     </p>
 
-    <h2>Getallen bij kleuren</h2>
     <p>
-        Elke kleur heeft een getal van 0 tot 255.
-        0 is uit en 255 is helemaal aan.
+        Twee bekende kleurmodellen zijn <strong>RGB</strong> en <strong>CMYK</strong>.
+        RGB wordt vooral gebruikt voor schermen en CMYK wordt vooral gebruikt
+        bij het afdrukken.
     </p>
 
-    <table border="1">
-        <tr>
-            <th>Kleur</th>
-            <th>Rood</th>
-            <th>Groen</th>
-            <th>Blauw</th>
-        </tr>
-        <tr>
-            <td>Rood</td>
-            <td>255</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>Groen</td>
-            <td>0</td>
-            <td>255</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>Blauw</td>
-            <td>0</td>
-            <td>0</td>
-            <td>255</td>
-        </tr>
-        <tr>
-            <td>Wit</td>
-            <td>255</td>
-            <td>255</td>
-            <td>255</td>
-        </tr>
-    </table>
+    <!-- Hier kun je later je afbeelding toevoegen -->
+    <!-- <img src="Kleurmodellen.png" width="500"> -->
+
+
+    <!-- Uitleg over RGB -->
+    <h2>RGB</h2>
+
+    <p>
+        RGB staat voor <strong>rood, groen en blauw</strong>.
+        Met deze drie kleuren kunnen heel veel verschillende kleuren worden gemaakt.
+        RGB wordt gebruikt bij apparaten zoals computers, telefoons en televisies.
+    </p>
+
+    <p>
+        Iedere kleur heeft een waarde van 0 tot en met 255.
+        Door de waarden van rood, groen en blauw te veranderen,
+        krijg je een andere kleur.
+    </p>
+
+
+    <!-- Uitleg over hoe RGB werkt -->
+    <h2>Hoe werkt RGB?</h2>
+
+    <p>
+        Bij RGB wordt elke kleur gemaakt door rood, groen en blauw met elkaar
+        te mengen. Als alle drie de kleuren 0 zijn, krijg je zwart.
+        Als alle drie de kleuren 255 zijn, krijg je wit.
+    </p>
+
+    <p>
+        Door bijvoorbeeld meer rood of meer blauw toe te voegen,
+        verandert de kleur die je op het scherm ziet.
+    </p>
+
+
+    <!-- Uitleg over CMYK -->
+    <h2>CMYK</h2>
+
+    <p>
+        CMYK is een kleurmodel dat vooral wordt gebruikt voor printers.
+        De letters staan voor <strong>cyaan, magenta, geel en zwart</strong>.
+    </p>
+
+    <p>
+        Met deze vier kleuren kunnen printers verschillende kleuren op papier
+        maken. CMYK werkt anders dan RGB, omdat RGB licht gebruikt en CMYK
+        met inkt werkt.
+    </p>
+
+
+    <!-- Uitleg over hoe CMYK werkt -->
+    <h2>Hoe werkt CMYK?</h2>
+
+    <p>
+        Bij CMYK worden verschillende hoeveelheden inkt met elkaar gecombineerd.
+        Door de kleuren cyaan, magenta en geel te mengen kunnen veel andere
+        kleuren ontstaan.
+    </p>
+
+    <p>
+        De letter K staat voor zwart. Zwart wordt apart gebruikt omdat hiermee
+        donkere kleuren en duidelijke teksten kunnen worden gemaakt.
+    </p>
+
+
+    <!-- Uitleg over pixels -->
+    <h2>Pixels</h2>
+
+    <p>
+        Een afbeelding op een scherm bestaat uit heel veel kleine puntjes.
+        Deze puntjes noemen we <strong>pixels</strong>.
+    </p>
+
+    <p>
+        Iedere pixel heeft een bepaalde kleur. Al deze pixels samen vormen
+        de afbeelding die je op je scherm ziet. Als je ver inzoomt op een
+        afbeelding, kun je de losse pixels soms zien.
+    </p>
+
+    <!-- Hier kun je later een afbeelding van pixels toevoegen -->
+    <!-- <img src="Pixels2.0.jpg" width="500"> -->
+
+
+    <!-- Uitleg over resolutie -->
+    <h2>Resolutie</h2>
+
+    <p>
+        De resolutie vertelt uit hoeveel pixels een afbeelding of scherm bestaat.
+        Een hogere resolutie betekent meestal dat er meer pixels zijn.
+    </p>
+
+    <p>
+        Een afbeelding van bijvoorbeeld 1920 bij 1080 pixels heeft
+        1920 pixels in de breedte en 1080 pixels in de hoogte.
+        Daardoor kan de afbeelding veel details bevatten.
+    </p>
+
+    <!-- Hier kun je later een afbeelding over resolutie toevoegen -->
+    <!-- <img src="Resolutie.png" width="500"> -->
+
+
+    <!-- Extra informatie -->
+    <h2>Meer informatie</h2>
+
+    <p>
+        Wil je meer weten over kleurmodellen? Dan kun je op de onderstaande
+        websites verder lezen.
+    </p>
+
+    <p>
+        <a href="https://www.eshuis.nl/" target="_blank">
+            Meer informatie over kleur
+        </a>
+    </p>
+
+    <p>
+        <a href="https://www.youtube.com/" target="_blank">
+            Video's over kleurmodellen
+        </a>
+    </p>
 
     <hr>
 
-    <p><em>Gemaakt door: Zain Al-Balhawan</em></p>
+    <!-- mijn naam -->
+    <p>
+        <em>Gemaakt door: Zain Al-Balhawan</em>
+    </p>
 
 </body>
 
