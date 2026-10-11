@@ -75,7 +75,7 @@ iframe {
     border: none;             /* Geen lelijke rand */
 }
 
-iframe.spel {
+.spel {
     max-width: 700px;   /* Groter voor het spel */
     height: 500px;
 }
