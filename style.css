@@ -113,6 +113,25 @@ iframe {
 .kaartjes .kaart { flex: 1 1 400px; }
 .vlag { font-size: 50px; }
 
+/* ---- Tabellen (voor binair stelsel) ---- */
+table {
+    border-collapse: collapse;   /* Zorgt dat de randen aan elkaar plakken */
+    background-color: white;     /* Witte achtergrond van de tabel */
+    margin: 15px 0;              /* Ruimte boven en onder de tabel */
+}
+
+th, td {
+    border: 1px solid #4b0082;   /* Paarse rand om elke cel */
+    padding: 8px 14px;           /* Ruimte binnen de cellen */
+    text-align: center;          /* Tekst in het midden */
+}
+
+th {
+    background-color: #4b0082;   /* Paarse achtergrond voor de kopregel */
+    color: white;                /* Witte tekst in de kopregel */
+    font-weight: bold;
+}
+
 /* ---- Voet ---- */
 .voet {
     background-color: #4b0082;
