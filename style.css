@@ -47,6 +47,17 @@ h2 { color: #4b0082; }
     color: white;
 }
 
+
+/* Speciale class voor de profielfoto */
+.profielfoto {
+    width: 150px;           /* Maak de foto 150 pixels breed */
+    height: 150px;          /* En 150 pixels hoog (een vierkant) */
+    object-fit: cover;      /* Zorgt dat de foto niet vervormt, maar netjes bijgesneden wordt */
+    border-radius: 50%;     /* Maakt de foto rond */
+    border: 4px solid #4b0082; /* Een mooie paarse rand eromheen */
+    margin: 0 auto 15px auto; /* Zet de foto in het midden van de kaart */
+}
+
 /* ---- Inhoud ---- */
 .container {
     max-width: 900px;
