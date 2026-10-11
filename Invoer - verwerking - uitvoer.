@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Invoer - Verwerking - Uitvoer - Zainspow</title>
+    <style>
+        /* Zelfde stijl als je andere pagina's */
+        body {
+            background-color: lightpink;
+            color: black;
+            font-family: Arial;
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 0;
+        }
+        h1 { color: #7a0a45; }
+        h2 { color: #4b0082; }
+
+        /* Menu */
+        .menubalk { padding: 15px 30px; }
+        .menu { position: relative; display: inline-block; }
+        .menu summary {
+            background-color: #7a0a45;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 6px;
+            list-style: none;
+        }
+        .menu summary::-webkit-details-marker { display: none; }
+        .dropdown {
+            position: absolute;
+            z-index: 10;
+            background-color: white;
+            min-width: 180px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            border-radius: 6px;
+            margin-top: 4px;
+        }
+        .dropdown a {
+            display: block;
+            padding: 10px 16px;
+            color: black;
+            text-decoration: none;
+        }
+        .dropdown a:hover {
+            background-color: #4b0082;
+            color: white;
+        }
+
+        /* Inhoud */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .kaart {
+            background-color: white;
+            border-left: 8px solid #4b0082;
+            border-radius: 10px;
+            padding: 20px 25px;
+            margin-bottom: 20px;
+        }
+        .kaart h2 { margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <!-- Menu -->
+    <div class="menubalk">
+        <details class="menu">
+            <summary>Menu ▾</summary>
+            <div class="dropdown">
+                <a href="index.html">Home</a>
+                <a href="invoer-verwerking-uitvoer.html">Invoer - Verwerking - Uitvoer</a>
+                <a href="binairstelsel.html">Binair stelsel</a>
+                <a href="kleurmodellen.html">Kleurmodellen</a>
+                <a href="compressie.html">Compressie</a>
+                <a href="ai.html">AI</a>
+            </div>
+        </details>
+    </div>
+
+    <div class="container">
+        <h1>Invoer - Verwerking - Uitvoer</h1>
+
+        <div class="kaart">
+            <h2>Wat is het?</h2>
+            <p>
+                Elke computer werkt eigenlijk met drie stappen: <strong>invoer</strong>,
+                <strong>verwerking</strong> en <strong>uitvoer</strong>. Samen noem je dat
+                het IPO-model (Input, Proces, Output).
+            </p>
+            <p>
+                Een computer krijgt informatie binnen (invoer), gaat daarmee rekenen
+                of iets doen (verwerking), en laat daarna het resultaat zien (uitvoer).
+            </p>
+        </div>
+
+        <div class="kaart">
+            <h2>Invoer</h2>
+            <p>
+                Invoer is alles wat jij of een apparaat aan de computer geeft.
+                Denk aan:
+            </p>
+            <ul>
+                <li>Toetsenbord: je typt een tekst.</li>
+                <li>Muis: je klikt ergens op.</li>
+                <li>Microfoon: je spreekt iets in.</li>
+                <li>Camera: je maakt een foto.</li>
+                <li>Sensor: meet bijvoorbeeld temperatuur.</li>
+            </ul>
+        </div>
+
+        <div class="kaart">
+            <h2>Verwerking</h2>
+            <p>
+                De computer gaat nu met de invoer aan de slag. De processor (CPU)
+                voert berekeningen uit. Bijvoorbeeld:
+            </p>
+            <ul>
+                <li>2 + 2 uitrekenen.</li>
+                <li>Een foto filteren.</li>
+                <li>Tekst omzetten naar spraak.</li>
+                <li>Bepalen of je hebt gewonnen in een game.</li>
+            </ul>
+            <p>
+                Soms wordt informatie tijdelijk opgeslagen in het werkgeheugen (RAM)
+                of op de harde schijf.
+            </p>
+        </div>
+
+        <div class="kaart">
+            <h2>Uitvoer</h2>
+            <p>
+                Als de computer klaar is, krijg je het resultaat te zien of te horen.
+                Dat is de uitvoer. Voorbeelden:
+            </p>
+            <ul>
+                <li>Beeld op je monitor.</li>
+                <li>Geluid uit je speakers.</li>
+                <li>Een geprint vel papier.</li>
+                <li>Trillen van je telefoon.</li>
+            </ul>
+        </div>
+
+        <div class="kaart">
+            <h2>Voorbeeld in het echt</h2>
+            <p>
+                Je drukt op de toets “A” (invoer). De computer zoekt op welk teken
+                daarbij hoort (verwerking). Het scherm laat de letter “A” zien (uitvoer).
+                Zo simpel is het eigenlijk!
+            </p>
+        </div>
+    </div>
+
+    <hr>
+    <p style="text-align:center;"><em>Gemaakt door: Zain Al-Balhawan</em></p>
+
+</body>
+</html>
