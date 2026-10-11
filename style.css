@@ -51,8 +51,8 @@ h2 { color: #4b0082 }
 /* Speciale class voor de profielfoto */
 
 .profielfoto {
-    width: 250px;           /* Maak de foto 150 pixels breed */
-    height: 250px;          /* En 150 pixels hoog (een perfect vierkant) */
+    width: 250px;           /* Maak de foto 250 pixels breed */
+    height: 250px;          /* En 250 pixels hoog (een perfect vierkant) */
     object-fit: cover;      /* Zorgt dat de foto niet vervormt */
     border-radius: 50%;     /* Maakt de foto rond */
     border: 5px solid white; /* Een dikke witte rand (zoals een fotolijstje) */
