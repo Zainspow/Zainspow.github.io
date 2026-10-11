@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Compressie - Zainspow</title>
+    <style>
+        /* Zelfde stijl */
+        body {
+            background-color: lightpink;
+            color: black;
+            font-family: Arial;
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 0;
+        }
+        h1 { color: #7a0a45; }
+        h2 { color: #4b0082; }
+
+        .menubalk { padding: 15px 30px; }
+        .menu { position: relative; display: inline-block; }
+        .menu summary {
+            background-color: #7a0a45;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 6px;
+            list-style: none;
+        }
+        .menu summary::-webkit-details-marker { display: none; }
+        .dropdown {
+            position: absolute;
+            z-index: 10;
+            background-color: white;
+            min-width: 180px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            border-radius: 6px;
+            margin-top: 4px;
+        }
+        .dropdown a {
+            display: block;
+            padding: 10px 16px;
+            color: black;
+            text-decoration: none;
+        }
+        .dropdown a:hover {
+            background-color: #4b0082;
+            color: white;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .kaart {
+            background-color: white;
+            border-left: 8px solid #4b0082;
+            border-radius: 10px;
+            padding: 20px 25px;
+            margin-bottom: 20px;
+        }
+        .kaart h2 { margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <div class="menubalk">
+        <details class="menu">
+            <summary>Menu ▾</summary>
+            <div class="dropdown">
+                <a href="index.html">Home</a>
+                <a href="invoer-verwerking-uitvoer.html">Invoer - Verwerking - Uitvoer</a>
+                <a href="binairstelsel.html">Binair stelsel</a>
+                <a href="kleurmodellen.html">Kleurmodellen</a>
+                <a href="compressie.html">Compressie</a>
+                <a href="ai.html">AI</a>
+            </div>
+        </details>
+    </div>
+
+    <div class="container">
+        <h1>Compressie: Bitmap en Vector</h1>
+
+        <div class="kaart">
+            <h2>Wat is compressie?</h2>
+            <p>
+                Compressie betekent dat je een bestand <strong>kleiner maakt</strong>.
+                Dat is handig, want dan neemt het minder ruimte in beslag op je
+                computer of telefoon. Ook gaat het sneller als je het verstuurt
+                via internet.
+            </p>
+            <p>
+                Er zijn twee soorten: <strong>verliesgevend</strong> (je raakt kwaliteit
+                kwijt) en <strong>verliesloos</strong> (de kwaliteit blijft hetzelfde,
+                maar het bestand wordt toch kleiner).
+            </p>
+        </div>
+
+        <div class="kaart">
+            <h2>Bitmap (raster)</h2>
+            <p>
+                Een bitmapafbeelding bestaat uit allemaal kleine puntjes: <strong>pixels</strong>.
+                Elke pixel heeft een eigen kleur. Als je inzoomt op een bitmap, zie je
+                die puntjes steeds duidelijker. Dan wordt het beeld “korrelig”.
+            </p>
+            <p>
+                Voorbeelden: foto's (JPG), schermafbeeldingen (PNG), en GIFjes.
+            </p>
+            <p>
+                <strong>Voordeel:</strong> je kunt er mooie, realistische foto's mee maken.
+                <br>
+                <strong>Nadeel:</strong> als je het vergroot, wordt het wazig. Het bestand
+                is vaak groter dan een vector.
+            </p>
+        </div>
+
+        <div class="kaart">
+            <h2>Vector</h2>
+            <p>
+                Een vectorafbeelding wordt niet met pixels gemaakt, maar met
+                <strong>wiskundige vormen</strong>: lijnen, cirkels en punten.
+                Daardoor kun je oneindig inzoomen zonder dat het wazig wordt.
+            </p>
+            <p>
+                Voorbeelden: logo's (SVG), iconen, en tekeningen in Illustrator.
+            </p>
+            <p>
+                <strong>Voordeel:</strong> blijft scherp, ook als je het heel groot maakt.
+                Het bestand is vaak klein.
+                <br>
+                <strong>Nadeel:</strong> je kunt er niet goed echte foto's mee maken.
+            </p>
+        </div>
+
+        <div class="kaart">
+            <h2>Verschil in het kort</h2>
+            <ul>
+                <li><strong>Bitmap:</strong> pixels, wordt wazig bij inzoomen, groot bestand, goed voor foto's.</li>
+                <li><strong>Vector:</strong> wiskundige vormen, blijft scherp, klein bestand, goed voor logo's en iconen.</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+    <p style="text-align:center;"><em>Gemaakt door: Zain Al-Balhawan</em></p>
+
+</body>
+</html>
