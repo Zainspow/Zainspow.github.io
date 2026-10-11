@@ -49,23 +49,29 @@ h2 { color: #4b0082; }
 
 
 /* Speciale class voor de profielfoto */
+
 .profielfoto {
     width: 150px;           /* Maak de foto 150 pixels breed */
-    height: 150px;          /* En 150 pixels hoog (een vierkant) */
-    object-fit: cover;      /* Zorgt dat de foto niet vervormt, maar netjes bijgesneden wordt */
+    height: 150px;          /* En 150 pixels hoog (een perfect vierkant) */
+    object-fit: cover;      /* Zorgt dat de foto niet vervormt */
     border-radius: 50%;     /* Maakt de foto rond */
-    border: 4px solid #4b0082; /* Een mooie paarse rand eromheen */
-    margin: 0 auto 15px auto; /* Zet de foto in het midden van de kaart */
+    border: 5px solid white; /* Een dikke witte rand (zoals een fotolijstje) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Een zachte schaduw */
+    margin: 10px auto 15px auto; /* Zet de foto in het midden */
+    display: block;
 }
 
-/* Foto's binnen de kaarten (zoals bij afkomst of hobby's) */
+/* Foto's binnen de kaarten (zoals bij afkomst) */
 .kaart-foto {
-    width: 100%;           /* Vul de breedte van de kaart */
-    max-width: 250px;      /* Maar wordt niet breder dan 250 pixels */
-    height: auto;          /* Houd de verhoudingen goed */
-    border-radius: 10px;   /* Mooie ronde hoeken */
-    margin: 10px auto 15px auto; /* Zet de foto in het midden met ruimte eromheen */
-    display: block;        /* Zorgt dat hij op een eigen regel staat */
+    width: 100%;            /* Vul de breedte van de kaart */
+    max-width: 250px;       /* Maar wordt niet breder dan 250 pixels */
+    height: 150px;          /* Zelfde hoogte als de profielfoto! */
+    object-fit: cover;      /* Zorgt dat de foto mooi bijgesneden wordt */
+    border-radius: 10px;    /* Mooie ronde hoeken */
+    border: 5px solid white; /* Zelfde witte rand als de profielfoto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Zelfde zachte schaduw */
+    margin: 10px auto 15px auto; /* Zet de foto in het midden */
+    display: block;
 }
 
 /* ---- Inhoud ---- */
