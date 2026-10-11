@@ -8,8 +8,8 @@ body {
     line-height: 1.5;
 }
 
- 
-h2 { color: #4b0082; }
+ h1 {color: #7a0a45}
+h2 { color: #4b0082 }
 
 /* ---- Menu ---- */
 .menubalk { padding: 15px 30px; }
