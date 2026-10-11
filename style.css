@@ -64,8 +64,8 @@ h2 { color: #4b0082 }
 /* Foto's binnen de kaarten (zoals bij afkomst) */
 .kaart-foto {
     width: 100%;            /* Vul de breedte van de kaart */
-    max-width: 250px;       /* Maar wordt niet breder dan 250 pixels */
-    height: 150px;          /* Zelfde hoogte als de profielfoto! */
+    max-width: 350px;       /* Maar wordt niet breder dan 250 pixels */
+    height: 250px;          /* Zelfde hoogte als de profielfoto! */
     object-fit: cover;      /* Zorgt dat de foto mooi bijgesneden wordt */
     border-radius: 10px;    /* Mooie ronde hoeken */
     border: 5px solid white; /* Zelfde witte rand als de profielfoto */
