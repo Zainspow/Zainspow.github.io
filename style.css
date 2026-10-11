@@ -53,12 +53,35 @@ h2 { color: #4b0082; }
     margin: 30px auto;
     padding: 0 20px;
 }
+
+/* ---- Afbeeldingen en video's ---- */
+
+/* Afbeeldingen netjes weer geven */
+img {
+    max-width: 100%;          /* Zorgt dat de afbeelding niet buiten het scherm valt */
+    height: auto;             /* Houdt de verhoudingen goed */
+    border-radius: 10px;      /* Ronde hoeken */
+    margin: 15px 0;           /* Ruimte boven en onder de afbeelding */
+    display: block;           /* Zorgt dat de afbeelding op een eigen regel staat */
+}
+
+/* Video's netjes weer geven */
+iframe {
+    width: 100%;              /* Video past zich aan de breedte van de kaart aan */
+    max-width: 560px;         /* Maar wordt niet breder dan 560 pixels */
+    height: 315px;            /* Hoogte van de video */
+    border-radius: 10px;      /* Ronde hoeken */
+    margin: 15px 0;           /* Ruimte boven en onder de video */
+    border: none;             /* Geen lelijke rand */
+}
+
 .kaart {
     background-color: white;
     border-left: 8px solid #4b0082;
     border-radius: 10px;
     padding: 20px 25px;
     margin-bottom: 20px;
+    overflow: hidden;         /* Zorgt dat de afbeelding niet buiten de kaart valt */
 }
 .kaart h2 { margin-top: 0; }
 .kaart ul { padding-left: 20px; }
