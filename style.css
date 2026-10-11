@@ -58,6 +58,16 @@ h2 { color: #4b0082; }
     margin: 0 auto 15px auto; /* Zet de foto in het midden van de kaart */
 }
 
+/* Foto's binnen de kaarten (zoals bij afkomst of hobby's) */
+.kaart-foto {
+    width: 100%;           /* Vul de breedte van de kaart */
+    max-width: 250px;      /* Maar wordt niet breder dan 250 pixels */
+    height: auto;          /* Houd de verhoudingen goed */
+    border-radius: 10px;   /* Mooie ronde hoeken */
+    margin: 10px auto 15px auto; /* Zet de foto in het midden met ruimte eromheen */
+    display: block;        /* Zorgt dat hij op een eigen regel staat */
+}
+
 /* ---- Inhoud ---- */
 .container {
     max-width: 900px;
