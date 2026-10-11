@@ -1,115 +1,95 @@
+/* Algemene opmaak van de pagina */
 body {
-            margin: 0;
-            background-color: lightpink;
-            color: black;
-            font-family: Arial;
-            font-size: 18px;
-            line-height: 1.5;
-        }
+    margin: 0;
+    background-color: lightpink;
+    color: black;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 1.5;
+}
 
-        /* ---- Menu ---- */
-        .menubalk {
-            padding: 15px 30px;
-        }
+h1 { color: #7a0a45; }
+h2 { color: #4b0082; }
 
-        .menu {
-            position: relative;
-            display: inline-block;
-        }
+/* ---- Menu ---- */
+.menubalk { padding: 15px 30px; }
+.menu { position: relative; display: inline-block; }
+.menu summary {
+    background-color: #7a0a45;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    list-style: none;
+}
+.menu summary::-webkit-details-marker { display: none; }
+.dropdown {
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    border-radius: 6px;
+    margin-top: 4px;
+}
+.dropdown a {
+    display: block;
+    padding: 10px 16px;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+    min-width: 240px;
+}
+.dropdown a:hover {
+    background-color: #4b0082;
+    color: white;
+}
 
-        .menu summary {
-            background-color: #7a0a45;
-            color: white;
-            padding: 10px 20px;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 6px;
-            list-style: none;
-        }
+/* ---- Inhoud ---- */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+.kaart {
+    background-color: white;
+    border-left: 8px solid #4b0082;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+}
+.kaart h2 { margin-top: 0; }
+.kaart ul { padding-left: 20px; }
 
-        .menu summary::-webkit-details-marker {
-            display: none;
-        }
+/* ---- Titelbalk (voor home) ---- */
+.titelbalk {
+    background-color: #7a0a45;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+.titelbalk h1 { margin: 0; font-size: 42px; }
+.titelbalk p { margin: 10px auto 0 auto; max-width: 600px; font-size: 20px; }
 
-        .dropdown {
-            position: absolute;
-            z-index: 10;
-            background-color: white;
-            min-width: 180px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            border-radius: 6px;
-            margin-top: 4px;
-        }
+/* ---- Kaartjes (voor home) ---- */
+.kaartjes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+.kaartjes .kaart { flex: 1 1 400px; }
+.vlag { font-size: 50px; }
 
-        .dropdown a {
-            display: block;
-            padding: 10px 16px;
-            color: black;
-            text-decoration: none;
-            white-space: nowrap;
-            min-width: 240px
-        }
-
-        .dropdown a:hover {
-            background-color: #4b0082;
-            color: white;
-        }
-
-        /* ---- Titelbalk ---- */
-        .titelbalk {
-            background-color: #7a0a45;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        .titelbalk h1 {
-            margin: 0;
-            font-size: 42px;
-        }
-
-        .titelbalk p {
-            margin: 10px auto 0 auto;
-            max-width: 600px;
-            font-size: 20px;
-        }
-
-        /* ---- Kaartjes ---- */
-        .kaartjes {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        .kaart {
-            background-color: white;
-            border-left: 8px solid #4b0082;
-            border-radius: 10px;
-            padding: 5px 25px 15px 25px;
-            flex: 1 1 400px;
-        }
-
-        .kaart h2 {
-            color: #4b0082;
-        }
-
-        .kaart ul {
-            padding-left: 20px;
-        }
-
-        .vlag {
-            font-size: 50px;
-        }
-
-        /* ---- Voet ---- */
-        .voet {
-            background-color: #4b0082;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-        }
+/* ---- Voet ---- */
+.voet {
+    background-color: #4b0082;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
